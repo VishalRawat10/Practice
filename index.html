@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100%;
+        height: 60vh;
+        border: 2px solid red;
+      }
+
+      .ball {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background: black;
+        animation-name: bounce;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes bounce {
+        0% {
+          translate: 0px 0px;
+        }
+
+        50% {
+          translate: 200px 50vh;
+        }
+        100% {
+          translate: 400px 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="ball"></div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
